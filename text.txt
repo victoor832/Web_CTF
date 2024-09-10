@@ -1,0 +1,49 @@
+
+
+
+1 - OSINT
+
+- Quien lleva la direccion de 42 ?
+    Sophie Viger
+
+- Quien hizo mas de 2 piscinas ? 
+    Joaquin
+
+- Cual es la differencia entre perifericos y taquillas
+    taquillas (216) // computadoras ((15 + 10 + 10) * 6) = 210 // periphericos (420)
+
+
+OSINT (Open Source Intelligence) es la recopilación y análisis de información obtenida de fuentes públicas y accesibles, como redes sociales,foros, sitios web, etc.El objetivo del OSINT es utilizar datos abiertos para apoyar la toma de decisiones sin recurrir a métodos clandestinos.
+
+-------------------------------------------------------------------------------------
+
+
+2 - Cryptografia - resolver un cifrado con cyberchef
+
+ZmxhZ3tDb29raW5nQ29va2llczRSb29raWVzfQ==
+
+flag{CookingCookies4Rookies}
+
+El cifrado es un proceso que transforma datos o información en un
+formato ilegible para proteger su contenido. Utiliza algoritmos y claves
+matemáticas para convertir el texto claro en texto cifrado o "código", de manera que solo quienes tienen
+la clave correcta puedan descifrarlo y acceder a la información original. Es una técnica clave en seguridad digital
+para proteger datos sensibles, como contraseñas, comunicaciones o transacciones.
+
+--------------------------------------------------------------------------------------
+
+3 - Stenographia
+
+La esteganografía es una técnica de ocultación de información dentro de otro
+tipo de archivo o medio de manera que el mensaje secreto pase desapercibido a simple vista. 
+A diferencia del cifrado, que transforma el mensaje en un formato ilegible,
+la esteganografía busca esconder la existencia misma del mensaje.
+
+
+--------------------------------------------------------------------------------------
+
+4 - 
+
+flag{INFORMACIÓN}
+
+

@@ -1,0 +1,89 @@
+/* VALIDACION DE RESPUESTAS */
+
+function showSection2() {
+    var answer1 = document.getElementById('answer1').value;
+    if(answer1 === 'Sophie Viger') {
+        document.getElementById('section1').classList.add('hidden'); // Ocultar sección 1
+        document.getElementById('section2').classList.remove('hidden'); // Mostrar sección 2
+        document.getElementById('response1').textContent = '19';
+        document.getElementById('response1').classList.remove('hidden');
+    }  else {
+        alert("El canal de la liga puede tener la solución...");
+    }
+}
+
+function showSection3() {
+    var answer2 = document.getElementById('answer2').value;
+    if(answer2 === 'Joaquin') {
+        document.getElementById('section2').classList.add('hidden'); // Ocultar sección 2
+        document.getElementById('section3').classList.remove('hidden'); // Mostrar sección 3
+        document.getElementById('response2').textContent = '06';
+        document.getElementById('response2').classList.remove('hidden');
+    }
+    else {
+        alert("¿Perteneces a una coalición?");
+    }
+}
+
+function showSection4() {
+    var answer3 = document.getElementById('answer3').value;
+    // Puedes validar answer3 si es necesario
+    document.getElementById('section3').classList.add('hidden'); // Ocultar sección 3
+    document.getElementById('section4').classList.remove('hidden'); // Mostrar sección 4
+}
+
+function showResponse4() {
+    var answer4 = document.getElementById('answer4').value;
+    if(answer4 === '28++;') {
+        document.getElementById('section4').classList.add('hidden'); // Ocultar sección 4
+        document.getElementById('response4').textContent = 'Lets goooooo (puedes comer)';
+        document.getElementById('response4').classList.remove('hidden');
+
+        window.location.href = '/pagina_2/pagina2.html'; // Cambia esta URL por la que necesites
+
+    } else {
+        alert("El número no es mayor que 25");
+    }
+}
+
+/* TEMPORIZADOR RESET WEB */
+
+var countdownElement = document.getElementById('countdown');
+var totalSeconds = 180; // 3 minutes
+
+var countdownInterval = setInterval(function() {
+    totalSeconds--;
+    var minutes = Math.floor(totalSeconds / 60);
+    var seconds = totalSeconds % 60;
+
+    countdownElement.textContent = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+
+    if (totalSeconds <= 0) {
+        clearInterval(countdownInterval);
+        location.reload();
+    }
+}, 1000);
+
+/* ELIMINAR INSPECCIONAR */
+
+ /*   document.onkeydown = function(e) {
+        if (e.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+        }
+    };
+
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    }, false); */ 
