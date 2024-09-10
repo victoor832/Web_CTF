@@ -28,3 +28,9 @@ function checkAnswer() {
         alert('Respuesta incorrecta. Inténtalo de nuevo.');
     }
 }
+
+/* BOTON SIGUIENTE REDIRIGE A LA PAGINA 3 */
+
+document.getElementById('nextButton').addEventListener('click', function() {
+    window.location.href = '../pagina_3/pagina3.html'; // Cambia 'pagina3.html' por la URL a la que deseas redirigir
+});
