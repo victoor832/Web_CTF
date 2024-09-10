@@ -1,11 +1,18 @@
 /* MOSTRAR INFORMACION */
 
 function toggleContent(contentId) {
-    var content = document.getElementById(contentId);
-    if (content.style.display === 'none' || content.style.display === '') {
-        content.style.display = 'flex';
-    } else {
+    // Ocultar todos los contenidos
+    var contents = document.querySelectorAll('.content');
+    contents.forEach(function(content) {
         content.style.display = 'none';
+    });
+
+    // Mostrar el contenido seleccionado
+    var selectedContent = document.getElementById(contentId);
+    if (selectedContent.style.display === 'none' || selectedContent.style.display === '') {
+        selectedContent.style.display = 'block';
+    } else {
+        selectedContent.style.display = 'none';
     }
 }
 
