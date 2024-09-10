@@ -2,7 +2,7 @@
 
 function showSection2() {
     var answer1 = document.getElementById('answer1').value;
-    if(answer1 === 'Sophie Viger') {
+    if(answer1 === 'Sophie Viger' || answer1 === 'Sophie viger' || answer1 === 'sophie Viger' || answer1 === 'sophie viger' ) {
         document.getElementById('section1').classList.add('hidden'); // Ocultar sección 1
         document.getElementById('section2').classList.remove('hidden'); // Mostrar sección 2
         document.getElementById('response1').textContent = '19';
@@ -14,7 +14,7 @@ function showSection2() {
 
 function showSection3() {
     var answer2 = document.getElementById('answer2').value;
-    if(answer2 === 'Joaquin') {
+    if(answer2 === 'Joaquin' || answer2 === 'joaquin' || answer2 === 'Joaquín' || answer2 === 'joaquín') {
         document.getElementById('section2').classList.add('hidden'); // Ocultar sección 2
         document.getElementById('section3').classList.remove('hidden'); // Mostrar sección 3
         document.getElementById('response2').textContent = '06';
@@ -28,10 +28,14 @@ function showSection3() {
 function showSection4() {
     var answer3 = document.getElementById('answer3').value;
     // Puedes validar answer3 si es necesario
-    document.getElementById('section3').classList.add('hidden'); // Ocultar sección 3
-    document.getElementById('section4').classList.remove('hidden'); // Mostrar sección 4
+    if(answer3 === '420') {
+        window.location.href = "/pagina_2/pagina2.html";
+    }
+    else {
+        alert("¿Has contado bien?");
+    }
 }
-
+/* 
 function showResponse4() {
     var answer4 = document.getElementById('answer4').value;
     if(answer4 === '28++;') {
@@ -39,12 +43,12 @@ function showResponse4() {
         document.getElementById('response4').textContent = 'Lets goooooo (puedes comer)';
         document.getElementById('response4').classList.remove('hidden');
 
-        window.location.href = '/pagina_2/pagina2.html'; // Cambia esta URL por la que necesites
+        
 
     } else {
         alert("El número no es mayor que 25");
     }
-}
+} */
 
 /* TEMPORIZADOR RESET WEB */
 
