@@ -28,7 +28,7 @@ function validation() {
     const pin = document.getElementById("answer").value;
 
     // Comprueba si el PIN es correcto
-    if (pin === "162930") {
+    if (pin === "162430") {
         window.location.href = "../final/index.html";
         alert("PIN correcto");
     } else {
