@@ -24,3 +24,65 @@ div {
     padding: 10px;
     border-radius: 5px;
 }
+
+
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 90%;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 0.75em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 10px 0;
+}
+button {
+    padding: 9px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #000000e5;
+    color: rgb(255, 208, 0);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin: 10px 0;
+}
+
+.content1, .content2 {
+    animation: zoom 3s ease-in-out infinite;
+}
+
+input {
+    border-radius: 2rem;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.validator {
+    font-size: 0.75rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.download-link {
+    margin: 20px 0;
+}
+.hidden {
+    display: none;
+}
