@@ -47,3 +47,4 @@ la esteganografía busca esconder la existencia misma del mensaje.
 flag{INFORMACIÓN}
 
 
+1642930

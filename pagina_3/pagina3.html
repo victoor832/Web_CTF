@@ -5,12 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>K1CK_0FF</title>
-
 </head>
 <body>
-    <div>
-        <h1>Bienvenido a la Página con Fondo Azul</h1>
-        <p>Este es un ejemplo de una página HTML con una imagen de fondo.</p>
+    <div class="row">
+        <section id="bank" class="bank">
+            <h1>🔐 Informacion Importante 🔐</h1>
+            <p>
+                Cliente: <span style="color: rgb(255, 3, 3);">Harrison T. Quinn</span>
+                <br>  
+                Contrato: Compra de información sensible  
+                <br>
+                Monto: $980,000.00  
+                <br>
+                Entidad receptora: ORGANIZACIÓN PHOENIX 
+                <br> 
+                Fecha: 09/10/2024 - 01:15 AM  
+                <br>
+                PIN: 1***
+                <br>
+                Estado: COMPLETADO
+                <br>
+                <br>
+                Cliente: <span style="color: rgb(0, 0, 153);">Olivia M. Rivers</span>  
+                <br>
+                Contrato: Transferencia de activos ilegales
+                <br>
+                Monto: $2,500,000.00  
+                <br>
+                Destino: CUENTA DESCIFRADA (Offshore - Sin rastreo)  
+                <br>
+                Fecha: 09/11/2024 - 12:55 AM  
+                <br>
+                PIN: **6*
+                <br>
+                Estado: APROBADO
+                <br>
+                <br>
+<!--                 
+                Cliente: <span style="color: rgb(0, 197, 0);">Thomas K. Monroe</span>  
+                <br>
+                Contrato: Venta de datos clasificados  
+                <br>
+                Monto: $750,000.00  
+                <br>
+                Servidor de destino: 45.123.89.22 (Encriptado)  
+                <br>
+                Fecha: 09/11/2024 - 02:30 AM  
+                <br>
+                PIN: 4***
+                <br>
+                Estado: PENDIENTE -->
+            </p>
+        </section>
+        <section id="military" class="military">
+            <h1>🔐 Informacion Importante 🔐</h1>
+            <p>
+                Sujeto investigado: <span style="color: rgb(237, 253, 8);">Gregory A. Carter</span>
+                <br>
+                Última ubicación: 51.5074° N, 0.1278° W
+                <br>
+                Seguimiento en vivo: ACTIVO  
+                <br>
+                Misión: Eliminación en 72 horas  
+                <br>
+                Método: Intervención mediante DRONE-X9
+                <br>
+                Contacto sospechoso: Natalia S. Romanov  
+                <br>
+                Posible vinculación con la operación de tráfico ilegal  
+                <br>
+                Última comunicación: 09/09/2024 - 10:30 PM  
+                <br>
+                Mensaje interceptado: **"Entrega asegurada, procede según lo previsto."**
+                <br>
+<!--                 Análisis de amenazas:  
+                <br>
+                - Sujeto principal ha descargado 3 archivos críticos del servidor "darkweb_alpha34".  
+                <br>
+                - Comunicación cifrada detectada con agentes en Europa del Este.  
+                <br>
+                - Riesgo estimado: 8/10  
+                <br>
+                - Operativos asignados: 5 agentes encubiertos  
+                <br>
+                - Acciones aprobadas: Neutralización inmediata. -->
+                <br>
+                <br>
+                <br>
+                <p style="font-size: 13px;">*Este mensaje corresponde al código: 2930</p>
+            </p>
+        </section>
+        <section class="validation">
+            <p id="question">¿Cual es el PIN maestro?</p>
+            <input type="text" id="answer" />
+            <button onclick="validation()">Comprobar</button>
+        </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
