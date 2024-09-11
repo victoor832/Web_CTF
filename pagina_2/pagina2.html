@@ -7,8 +7,8 @@
     <title>K1CK_0FF</title>
 </head>
 <body>
-    <button onclick="toggleContent('content1')">Cryptographia</button>
-    <button onclick="toggleContent('content2')">Stenographia</button>
+    <button class="content1" onclick="toggleContent('content1')">Cryptographia</button>
+    <button class="content2" onclick="toggleContent('content2')">Stenographia</button>
 
     <div class="content" id="content1">
         El cifrado es un proceso que transforma datos o información en un formato ilegible para proteger su contenido. Utiliza algoritmos y claves matemáticas para convertir el texto claro en texto cifrado o "código", de manera que solo quienes tienen la clave correcta puedan descifrarlo y acceder a la información original. Es una técnica clave en seguridad digital para proteger datos sensibles, como contraseñas, comunicaciones o transacciones.
@@ -17,10 +17,11 @@
     <div class="content" id="content2">
         La esteganografía es una técnica de ocultación de información dentro de otro tipo de archivo o medio de manera que el mensaje secreto pase desapercibido a simple vista. A diferencia del cifrado, que transforma el mensaje en un formato ilegible, la esteganografía busca esconder la existencia misma del mensaje.
     </div>
-
-    <input type="text" id="answer" placeholder="Escribe tu respuesta aquí">
-    <button onclick="checkAnswer()">Comprobar Respuesta</button>
-    <button id="nextButton" class="hidden">Continua tu reto</button>
+    <div class="answer">
+        <input type="text" id="answer" placeholder="Escribe tu respuesta aquí">
+        <button class="validator" onclick="checkAnswer()">Comprobar Respuesta</button>
+    </div>
+        <button id="nextButton" class="hidden">Continua tu reto</button>
 
     <a href="/img/brain.jpg" download class="download-link">
         <img src="/img/brain.jpg" alt="Brain" style="max-width: 100px; border: 2px solid white; border-radius: 5px;">

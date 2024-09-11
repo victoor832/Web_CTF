@@ -8,7 +8,7 @@ function showSection2() {
         document.getElementById('response1').textContent = '19';
         document.getElementById('response1').classList.remove('hidden');
     }  else {
-        alert("El canal de la liga puede tener la solución...");
+        alert("Pista: Es directora Ejecutiva");
     }
 }
 
@@ -21,14 +21,14 @@ function showSection3() {
         document.getElementById('response2').classList.remove('hidden');
     }
     else {
-        alert("¿Perteneces a una coalición?");
+        alert("Está presente en todas las piscinas y no es Staff");
     }
 }
 
 function showSection4() {
     var answer3 = document.getElementById('answer3').value;
     // Puedes validar answer3 si es necesario
-    if(answer3 === '420') {
+    if(answer3 === '204') {
         window.location.href = "/pagina_2/pagina2.html";
     }
     else {
